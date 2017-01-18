@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center|right"
+        android:weightSum="1"
+        android:background="@drawable/gameback">
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:id="@+id/start_btn"
+            android:textSize="40sp"
+            android:onClick="start_btn_onClick"
+            android:layout_weight="0.09"
+            android:layout_marginTop="200dp" />
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:text="@string/checkHistory"
+            android:id="@+id/check_btn"
+            android:textSize="40sp"
+            android:onClick="check_btn_onClick"
+            android:layout_weight="0.09" />
+
+        <Button
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:text="@string/leave"
+            android:id="@+id/leave_btn"
+            android:textSize="40sp"
+            android:onClick="leave_btn_onClick"
+            android:layout_weight="0.09" />
+    </LinearLayout>
+</LinearLayout>

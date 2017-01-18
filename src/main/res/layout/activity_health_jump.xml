@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#000000">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:background="#E6B045">
+
+        <ImageView
+            android:src="@drawable/calendar32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView4"
+            android:layout_weight="0.09"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/date"
+            android:id="@+id/textView"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/date_et"
+            android:layout_weight="1"
+            android:enabled="true"
+            android:onClick="date_et_onClick"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:background="#B88D37">
+
+        <ImageView
+            android:src="@drawable/heartbeat32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:layout_weight="0.3"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/typein_jump"
+            android:id="@+id/textView4"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+
+        <NumberPicker
+            android:layout_width="44dp"
+            android:layout_height="73dp"
+            android:id="@+id/jump_np"
+            android:orientation="horizontal"
+            android:solidColor="#E6B045"
+            android:layout_marginLeft="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/jumpDetail"
+            android:id="@+id/textView3"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:background="#E6B045">
+
+        <ImageView
+            android:src="@drawable/temperature32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView2"
+            android:layout_weight="0.12"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/typein_temp"
+            android:id="@+id/textView1"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <NumberPicker
+            android:layout_width="44dp"
+            android:layout_height="73dp"
+            android:id="@+id/temp_np"
+            android:orientation="horizontal"
+            android:solidColor="#E6B045" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/c"
+            android:id="@+id/textView8"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#B88D37"
+        android:weightSum="1">
+
+        <ImageView
+            android:src="@drawable/bloodsuger32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView3"
+            android:layout_weight="0.16"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/typein_sugar"
+            android:id="@+id/textView5"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <NumberPicker
+            android:layout_width="44dp"
+            android:layout_height="73dp"
+            android:id="@+id/sugar_np"
+            android:orientation="horizontal"
+            android:solidColor="#E6B045"
+            android:layout_marginLeft="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/mgdl"
+            android:id="@+id/textView9"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:background="#E6B045">
+
+
+        <ImageView
+            android:src="@drawable/heartpressurehigh32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView5"
+            android:layout_weight="0.17"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/pressure1"
+            android:id="@+id/textView6"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <NumberPicker
+            android:layout_width="44dp"
+            android:layout_height="73dp"
+            android:id="@+id/pressure1_np"
+            android:orientation="horizontal"
+            android:solidColor="#E6B045"
+            android:layout_marginLeft="7.5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/mmhg"
+            android:id="@+id/textView7"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#B88D37"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:src="@drawable/heartpressurelow32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView6"
+            android:layout_weight="0.17"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/pressure2"
+            android:id="@+id/textView2"
+            android:paddingLeft="20dp"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <NumberPicker
+            android:layout_width="44dp"
+            android:layout_height="73dp"
+            android:id="@+id/pressure2_np"
+            android:orientation="horizontal"
+            android:solidColor="#E6B045"
+            android:layout_marginLeft="7.5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/mmhg"
+            android:id="@+id/textView10"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/add"
+            android:id="@+id/sure_btn"
+            android:layout_gravity="center_horizontal"
+            android:onClick="sure_btn_onClick"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:background="#000000"
+            android:textColor="#e2f8fff7"
+            android:singleLine="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/reset"
+            android:background="#000000"
+            android:textColor="#e2f8fff7"
+            android:id="@+id/reset_btn"
+            android:textSize="20sp"
+            android:layout_weight="0.5"
+            android:onClick="reset_btn_onClick" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jimapp.projectnhu" >
+    //閃光燈需要用到的Camera宣告
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    //GPS地位需要用到的權限宣告
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    //註冊打電話和傳送簡訊的權限
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    //震動
+    <uses-permission android:name="android.permission.VIBRATE" android:required="false"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo128"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        //首頁CLASS
+        <activity
+            android:name=".index"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //鬧鐘CLASS
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Alarm_add"
+            android:theme="@android:style/Theme.Dialog"/>
+        //鬧鐘收發通知宣告
+        <receiver android:name=".AlarmReceiver"/>
+        //閃光燈CLASS
+        <activity android:name=".Flash" />
+        //GPSOS CLASS
+        <activity android:name=".GPSOS" />
+        //GPSOS_set CLASS
+        <activity android:name=".GPSOS_set"
+                  android:theme="@android:style/Theme.Dialog"/>
+        //健康紀錄簿CLASS
+        <activity android:name=".Health" />
+        //健康紀錄簿_心跳CLASS
+        <activity android:name=".Health_jump" />
+        //健康紀錄簿_歷史紀錄CLASS
+        <activity android:name=".History" />
+        //Magnifying CLASS
+        <activity android:name=".Magnifying" />
+        //Shake CLASS
+        <activity android:name=".Shake_index"/>
+        <activity android:name=".Shake" />
+        //about us CLASS
+        //aChart_jump CLASS
+        <activity android:name=".aChart_jump"/>
+        <activity android:name=".aChart_sugar"/>
+        <activity android:name=".aChart_temp"/>
+        <activity android:name=".aChart_pressure"/>
+    </application>
+
+</manifest>

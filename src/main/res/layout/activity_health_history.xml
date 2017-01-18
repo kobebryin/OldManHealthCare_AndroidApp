@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchjump"
+            android:id="@+id/searchjump_btn"
+            android:background="#E6B045"
+            android:textColor="@android:color/black"
+            android:onClick="searchjump_onClick"
+            android:layout_weight="0.25"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchsugar"
+            android:id="@+id/searchsugar_btn"
+            android:background="#E6B045"
+            android:textColor="@android:color/black"
+            android:onClick="searchsugar_onClick"
+            android:layout_weight="0.25"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchpressure"
+            android:id="@+id/searchpressure_btn"
+            android:onClick="searchpressure_onClick"
+            android:background="#E6B045"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.25"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searchtemp"
+            android:id="@+id/searchtemp_btn"
+            android:onClick="searchtemp_onClick"
+            android:background="#E6B045"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.25"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src = "@drawable/chart"
+                    android:background="#E6B045"
+                    android:onClick="showResult_jump_btn_onClick"
+                    android:id="@+id/showResult_jump_btn"
+                    android:layout_weight="0.25"
+                    android:visibility="invisible" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showResult_sugar_btn"
+                    android:onClick="showResult_sugar_btn_onClick"
+                    android:src = "@drawable/chart"
+                    android:background="#E6B045"
+                    android:layout_weight="0.25"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src = "@drawable/chart"
+                    android:id="@+id/showResult_pressure_btn"
+                    android:onClick="showResult_pressure_btn_onClick"
+                    android:background="#E6B045"
+                    android:layout_weight="0.25"
+                    android:visibility="invisible"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src = "@drawable/chart"
+                    android:id="@+id/showResult_temp_btn"
+                    android:onClick="showResult_temp_btn_onClick"
+                    android:background="#E6B045"
+                    android:layout_weight="0.25"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView11" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:weightSum="1"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Alarm_btn"
+            android:src="@drawable/drugremind170"
+            android:contentDescription="@string/alarmImage"
+            android:background="@null"
+            android:layout_weight="0.5"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingRight="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Flash_btn"
+            android:src="@drawable/flasglight170"
+            android:contentDescription="@string/flashlightImage"
+            android:background="@null"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:weightSum="1"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Health_btn"
+            android:src="@drawable/healthrecord170"
+            android:contentDescription="@string/healthImage"
+            android:layout_weight="0.50"
+            android:background="@null"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingRight="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/magnifying_btn"
+            android:src="@drawable/magnifyingglass170"
+            android:contentDescription="@string/magnifying"
+            android:background="@null"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/gpsos_btn"
+            android:contentDescription="@string/gpsos"
+            android:src = "@drawable/gpsos170"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:paddingRight="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/shake_btn"
+            android:contentDescription="@string/shake"
+            android:src = "@drawable/game170"
+            android:layout_weight="0.5"
+            android:background="@null"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
